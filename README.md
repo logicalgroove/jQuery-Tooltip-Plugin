@@ -15,5 +15,4 @@ $('.tooltip').tooltip();
 ```
 
 ## Authors
-Alexander Lopez
-Eugene Dorian
+Alexander Lopez, Eugene Dorian
