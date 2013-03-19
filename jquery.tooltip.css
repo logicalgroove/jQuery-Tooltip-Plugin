@@ -1,17 +1,17 @@
 #tooltip {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFlJREFUeNpiVFJS4mFgYNgFxJYMxIHjQOzGBCS+gBhQAaI0gfQwQQVgmo8QownEYUKSAAl44tCMogldIy7NGJpAgAWL6TDN24GYGZsmXBqRNTNg0wQCAAEGABK1F+tY0QyeAAAAAElFTkSuQmCC) no-repeat bottom;
   color: #fff;
   display: none;
   font-size: 12px;
-  padding: 2px 4px 7px;
+  padding: 2px 4px;
   position: absolute;
   text-align: center;
-  z-index: 9999;
+  z-index: 255;
+  min-width: 200px;
+  max-width: 400px;
 }
 
   #tooltip .tooltip-bg {
     background: #111;
-    border: 1px solid #000;
     opacity: 0.8;
     position: absolute;
     top: 0;

@@ -3,7 +3,7 @@ jQuery Tooltip Plugin
 
 A simple jquery tooltip plugin
 
-## How to use it
+## Usage
 
 In your HTML:
 ```html
@@ -13,3 +13,7 @@ In your javascript:
 ```js
 $('.tooltip').tooltip();
 ```
+
+## Authors
+Alexander Lopez
+Eugene Dorian
