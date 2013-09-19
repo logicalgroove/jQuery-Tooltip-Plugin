@@ -12,8 +12,10 @@ $.fn.tooltip = function(){
   return this.each(function () {
     var tip = '';
     $(this).mouseover(function(e) {
-      tip = $(this).prop('title');
-      $(this).prop('title','');
+      element = $(this)
+      if (element.prop('title') != '') {
+        tip = element.prop('title')
+      }
       $('body').append('<div id="tooltip"><div class="tooltip-caption">'+ tip +'</div><div class="tooltip-bg"></div></div>')
       var tipWidth = $('#tooltip').outerWidth();
       var tipHeight = $('#tooltip').outerHeight();
@@ -26,8 +28,9 @@ $.fn.tooltip = function(){
       }
       $('#tooltip').css('top', targetPosition.top - (tipHeight + 4) + 'px');
       $('#tooltip').css('left', targetPosition.left - (tipWidth/2) + ($(e.target).outerWidth()/2) - shiftRight + 'px');
+      element.prop('title','');
       $('#tooltip').fadeIn('500');
-    }).mouseout(function() {
+    }).mouseleave(function() {
       $(this).prop('title', tip);
       $('body').children('div#tooltip').remove();
     });
